@@ -1,3 +1,4 @@
+'use client'
 import gsap, { ScrollTrigger } from 'gsap/all'
 import Link from 'next/link'
 import React, { useEffect, useLayoutEffect, useRef } from 'react'
