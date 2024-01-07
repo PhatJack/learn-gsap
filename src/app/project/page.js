@@ -1,3 +1,4 @@
+'use client'
 import gsap, { ScrollToPlugin, ScrollTrigger } from 'gsap/all'
 import React, { useEffect, useRef } from 'react'
 import Image from 'next/image';
