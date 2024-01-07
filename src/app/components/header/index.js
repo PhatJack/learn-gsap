@@ -102,7 +102,7 @@ const Index = () => {
 							<ul className="w-full h-full flex flex-col px-4 py-5 gap-4 box-border">
 								{
 									["Home", "About", "Project", "Contact"].map((item, index) => (
-										<li>
+										<li key={index}>
 											<Link
 												href={`/#${item.toLowerCase()}`}>
 												<motion.div

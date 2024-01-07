@@ -72,7 +72,7 @@ const StairTransition = () => {
 			<div className="fixed w-screen h-screen z-20 flex">
 				{
 					[...Array(5)].map((_, index) => (
-						<div className="bar w-[20vw] h-[105vh] bg-[#1a1a1a]"></div>
+						<div key={index} className="bar w-[20vw] h-[105vh] bg-[#1a1a1a]"></div>
 					))
 				}
 			</div>
