@@ -1,0 +1,70 @@
+.navigate{
+	position: relative;
+	overflow: hidden;
+	z-index: 2;
+}
+.navigate::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #1b1b1b;
+	left: -100%;
+	z-index: -1;
+	animation: slideRight 350ms ease-in-out forwards;
+}
+.navigate:hover::before{
+	animation: slideLeft 350ms ease-in-out forwards;
+}
+@keyframes slideLeft {
+	from {
+		left: -100%;
+	}
+	to {
+		left: 0;
+	}
+}
+@keyframes slideRight {
+	from {
+		left: 0;
+	}
+	to {
+		left: 100%;
+	}
+}
+.navigate:hover > span{
+	transition: color 350ms linear 0.1s;
+	color: white;
+}
+.navigate:hover .burger span{
+	transition: background 350ms linear 0.2s;
+	background: white;
+}
+.expand-menu {
+	position: absolute;
+	top: 26px;
+	right: 24px;
+	width: 480px;
+	height: 400px;
+	background: white;
+	border: 1px solid #1b1b1b;
+	border-radius: 2px;
+}
+.expand-menu .expand-menu-header .close-burger span{
+	transition: transform 0.3s;
+}
+.expand-menu .expand-menu-header:hover .close-burger span:nth-child(1){
+	transform: rotate(45deg);
+	top: 3px;
+}
+.expand-menu .expand-menu-header:hover .close-burger span:nth-child(2){
+	transform: rotate(-45deg);
+	top: -2px;
+}
+.text-menu-active {
+	color: white;
+}
+.burger-active {
+	background: white;
+	order: 1;
+}

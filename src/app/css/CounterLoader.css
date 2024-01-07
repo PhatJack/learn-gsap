@@ -1,0 +1,46 @@
+.loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 100;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.percent {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	width: 100%;
+	color: white;
+	font-size: 150px;
+	mix-blend-mode: difference;
+	font-style: italic;
+	overflow: hidden;
+}
+#bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+}
+.left-window,
+.right-window {
+	width: 50%;
+	height: 100vh;
+	position: absolute;
+	background: #1b1b1b;
+}
+.left-window{
+	left: 0;
+}
+.right-window{
+	right: 0;
+}
